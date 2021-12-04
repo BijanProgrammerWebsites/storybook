@@ -8,6 +8,7 @@ import {TwoColumnComponent} from './two-column/two-column.component';
 import {IconsModule} from '../icons/icons.module';
 import {ConnectedIslandsComponent} from './connected-islands/connected-islands.component';
 import {ThanksComponent} from './thanks/thanks.component';
+import {IframeComponent} from './iframe/iframe.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +18,7 @@ import {ThanksComponent} from './thanks/thanks.component';
         TwoColumnComponent,
         ConnectedIslandsComponent,
         ThanksComponent,
+        IframeComponent,
     ],
     exports: [
         CoverComponent,
@@ -25,6 +27,7 @@ import {ThanksComponent} from './thanks/thanks.component';
         TwoColumnComponent,
         ConnectedIslandsComponent,
         ThanksComponent,
+        IframeComponent,
     ],
     imports: [CommonModule, PipesModule, IconsModule],
 })

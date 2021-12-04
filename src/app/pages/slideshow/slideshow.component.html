@@ -8,24 +8,159 @@
         <div background></div>
     </slide-cover>
 
-    <!--    <slide-table-of-contents [items]="tableOfContents">-->
-    <!--        <div background></div>-->
-    <!--    </slide-table-of-contents>-->
+    <slide-table-of-contents [items]="tableOfContents">
+        <div background></div>
+    </slide-table-of-contents>
 
-    <!--    <slide-chapter-start [index]="0" [heading]="tableOfContents[0]" verticalPosition="top" horizontalPosition="left">-->
-    <!--        <div background></div>-->
-    <!--    </slide-chapter-start>-->
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+    <slide-chapter-start [index]="0" [heading]="tableOfContents[0]" verticalPosition="top" horizontalPosition="left">
+        <div background></div>
+    </slide-chapter-start>
 
-    <!--    <slide-two-column heading="Definition" position="right">-->
-    <!--        <div background></div>-->
+    <slide-two-column heading="Introduction" position="right">
+        <div background></div>
 
-    <!--        <p>Data visualization is the graphical representation of information and data.</p>-->
+        <p>
+            As UI design has evolved over the years, the scale and speed at which UI screens must be created has also
+            increased.
+        </p>
 
-    <!--        <p>-->
-    <!--            By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way-->
-    <!--            to see and understand trends, outliers, and patterns in data.-->
-    <!--        </p>-->
-    <!--    </slide-two-column>-->
+        <p>
+            Not only are there millions of applications and billions of websites (with more created each year), but each
+            of those apps and websites might have hundreds or thousands of pages (or screens).
+        </p>
+
+        <p>
+            With this drastic expansion comes a dire need for organizations to streamline design work. So, many design
+            teams leverage robust design systems to manage designs at scale.
+        </p>
+    </slide-two-column>
+
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+    <slide-chapter-start [index]="1" [heading]="tableOfContents[1]" verticalPosition="top" horizontalPosition="left">
+        <div background></div>
+    </slide-chapter-start>
+
+    <slide-two-column heading="Definition" position="right">
+        <div background></div>
+
+        <p>
+            A Design System is the single source of truth which groups all the elements that will allow the teams to
+            design, realize and develop a product.
+        </p>
+
+        <p>
+            It is a complete set of standards intended to manage design at scale using reusable components and patterns.
+        </p>
+    </slide-two-column>
+
+    <slide-two-column heading="Why Use a Design System?" position="right">
+        <div background></div>
+
+        <p>Design systems, when implemented well, can provide a lot of benefits to a design team:</p>
+
+        <ul>
+            <li>Design (and development) work can be created and replicated quickly and at scale.</li>
+            <li>It alleviates strain on design resources to focus on larger, more complex problems.</li>
+            <li>It creates a unified language within and between cross-functional teams.</li>
+            <li>It creates visual consistency across products, channels, and (potentially siloed) departments.</li>
+            <li>
+                It can serve as an educational tool and reference for junior-level designers and content contributors.
+            </li>
+        </ul>
+    </slide-two-column>
+
+    <slide-two-column heading="Why Not Use a Design System?" position="right">
+        <div background></div>
+
+        <p>
+            There are some potential hurdles and limitations which may prevent a design team from using a design system:
+        </p>
+
+        <ul>
+            <li>
+                Creating and maintaining a design system is a time-intensive activity which requires a dedicated team.
+            </li>
+            <li>It takes time to teach others how to use the design system.</li>
+            <li>
+                There may be a perception that projects are static, one-off creations, which generally don’t require
+                reusable components.
+            </li>
+        </ul>
+    </slide-two-column>
+
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+    <slide-chapter-start [index]="2" [heading]="tableOfContents[2]" verticalPosition="top" horizontalPosition="left">
+        <div background></div>
+    </slide-chapter-start>
+
+    <slide-two-column heading="Live Code Playground" position="right">
+        <div background></div>
+
+        <ul>
+            <li>How to implement it in my project?</li>
+            <li>What are the results when something has been changed?</li>
+            <li>Anyone can use it without being forced to install/learn anything.</li>
+        </ul>
+    </slide-two-column>
+
+    <slide-two-column heading="Usage Examples" position="right">
+        <div background></div>
+
+        <ul>
+            <li>How to use it?</li>
+            <li>When to use it?</li>
+            <li>What are the different variants?</li>
+            <li>It should be crystal clear.</li>
+        </ul>
+    </slide-two-column>
+
+    <slide-two-column heading="Platform Guidelines" position="right">
+        <div background></div>
+
+        <ul>
+            <li>What are the UI paradigms?</li>
+            <li>What are the primary/secondary colors?</li>
+            <li>What settings screens look like?</li>
+            <li>What are the micro-interactions?</li>
+            <li>UX Guidelines</li>
+        </ul>
+    </slide-two-column>
+
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+    <slide-chapter-start [index]="3" [heading]="tableOfContents[3]" verticalPosition="top" horizontalPosition="left">
+        <div background></div>
+    </slide-chapter-start>
+
+    <slide-iframe heading="Google's Material" url="https://material.io/components/date-pickers" position="left">
+        <div background></div>
+    </slide-iframe>
+
+    <slide-iframe
+        heading="Salesforce's Lightning"
+        url="https://www.lightningdesignsystem.com/components/activity-timeline/"
+        position="left"
+    >
+        <div background></div>
+    </slide-iframe>
+
+    <slide-iframe
+        heading="IBM's Carbon"
+        url="https://angular.carbondesignsystem.com/?path=/story/components-notification--basic"
+        position="left"
+    >
+        <div background></div>
+    </slide-iframe>
+
+    <slide-iframe
+        heading="Palantir's Blueprint"
+        url="https://blueprintjs.com/docs/#core/components/button"
+        position="left"
+    >
+        <div background></div>
+    </slide-iframe>
+
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
 
     <!--    <slide-two-column heading="Importance & Usage" position="right">-->
     <!--        <div background></div>-->

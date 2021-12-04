@@ -42,6 +42,25 @@
             gap: 2rem;
 
             padding: 0;
+
+            ::ng-deep {
+                > ul {
+	                display: flex;
+	                flex-direction: column;
+	                gap: 2rem;
+	
+	                font-size: 2.4rem;
+	                
+                    li {
+                        display: flex;
+                        gap: 1rem;
+
+                        &::before {
+                            content: "✔";
+                        }
+                    }
+                }
+            }
         }
     }
 }

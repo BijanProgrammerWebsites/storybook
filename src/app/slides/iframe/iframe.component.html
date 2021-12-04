@@ -9,7 +9,9 @@
         </header>
 
         <main>
-            <ng-content select="*"></ng-content>
+            <a [href]="url">
+                <img [src]="'/assets/images/' + heading + '.png'" alt="A screenshot of the website" />
+            </a>
         </main>
     </div>
 </div>
