@@ -6,6 +6,34 @@
 
     padding-inline: var(--full-width-padding-inline);
 
+    .background-container {
+        display: grid;
+        place-items: center;
+
+        &.horizontal {
+            &-left {
+                grid-column: 2;
+	            
+	            display: grid;
+	            place-items: center;
+            }
+
+            &-center {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+
+            &-right {
+                grid-column: 1;
+	
+	            display: grid;
+	            grid-template-columns: repeat(2, 1fr);
+	            place-items: center;
+	            gap: 8rem;
+            }
+        }
+    }
+
     .content {
         display: flex;
         flex-direction: column;
@@ -45,18 +73,18 @@
 
             ::ng-deep {
                 > ul {
-	                display: flex;
-	                flex-direction: column;
-	                gap: 2rem;
-	
-	                font-size: 2rem;
-	                
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                    font-size: 2rem;
+
                     li {
                         display: flex;
                         gap: 1rem;
 
                         &::before {
-                            content: "-";
+                            content: '-';
                         }
                     }
                 }

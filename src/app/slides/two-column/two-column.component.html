@@ -1,5 +1,5 @@
 <div class="slide">
-    <div class="background-container">
+    <div class="background-container" [ngClass]="['horizontal-' + position]">
         <ng-content select="[background]"></ng-content>
     </div>
 
