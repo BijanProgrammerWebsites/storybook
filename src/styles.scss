@@ -29,8 +29,7 @@
     --color--danger-fade: hsl(var(--danger-hue), 100%, 90%);
     --color--danger-opposite: hsl(0, 0%, 98%);
 
-    //--color--watermark: hsl(0, 0%, 80%);
-    --color--watermark: hsl(354, 77%, 63%);
+    --color--watermark: var(--color--storybook-pink);
 
     --color--body-background: hsl(0, 0%, 98%);
     --color--body-foreground: var(--color--storybook-dark);

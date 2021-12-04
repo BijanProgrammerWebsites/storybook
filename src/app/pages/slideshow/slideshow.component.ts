@@ -20,7 +20,16 @@ export class SlideshowComponent implements AfterViewInit, OnDestroy {
 
     public slideIndex: number = 1;
 
-    public tableOfContents: string[] = ['Introduction', 'Design System', 'Elements of a Design System', 'Examples'];
+    public tableOfContents: string[] = [
+        'Introduction',
+        'Design System',
+        'Elements of a Design System',
+        'Real World Examples',
+        'Atomic Design',
+        'How to Make Your Own Design System',
+        'Storybook',
+    ];
+
     public dataVisualizationBenefits: string[] = [
         'Finding errors',
         'Better analysis',

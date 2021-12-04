@@ -137,6 +137,14 @@
     </slide-iframe>
 
     <slide-iframe
+        heading="Microsoft's Fluent UI"
+        url="https://developer.microsoft.com/en-us/fluentui#/controls/web/spinbutton"
+        position="left"
+    >
+        <div background></div>
+    </slide-iframe>
+
+    <slide-iframe
         heading="Salesforce's Lightning"
         url="https://www.lightningdesignsystem.com/components/activity-timeline/"
         position="left"
@@ -161,167 +169,99 @@
     </slide-iframe>
 
     <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+    <slide-chapter-start [index]="4" [heading]="tableOfContents[4]" verticalPosition="top" horizontalPosition="left">
+        <div background></div>
+    </slide-chapter-start>
 
-    <!--    <slide-two-column heading="Importance & Usage" position="right">-->
-    <!--        <div background></div>-->
+    <slide-two-column heading="Atomic Design" position="right">
+        <div background></div>
 
-    <!--        <p>Data visualization is important for almost every career.</p>-->
+        <p>Atomic design is methodology for creating design systems.</p>
 
-    <!--        <p>-->
-    <!--            It can be used by teachers to display student test results, by computer scientists exploring advancements in-->
-    <!--            artificial intelligence (AI) or by executives looking to share information with stakeholders.-->
-    <!--        </p>-->
+        <p>There are five distinct levels in atomic design:</p>
 
-    <!--        <p>It also plays an important role in big data projects.</p>-->
-    <!--    </slide-two-column>-->
+        <ul>
+            <li>Atoms</li>
+            <li>Molecules</li>
+            <li>Organisms</li>
+            <li>Templates</li>
+            <li>Pages</li>
+        </ul>
+    </slide-two-column>
 
-    <!--    <slide-two-column heading="Visual Clues" position="left">-->
-    <!--        <div background></div>-->
+    <slide-iframe
+        heading="Atomic Design's Levels"
+        url="https://bradfrost.com/blog/post/atomic-web-design/"
+        position="left"
+    >
+        <div background></div>
+    </slide-iframe>
 
-    <!--        <p>Our eyes are drawn to colors and patterns. We can quickly identify red from blue, square from circle.</p>-->
+    <slide-two-column heading="Why Atomic Design?" position="right">
+        <div background></div>
 
-    <!--        <p>Our culture is visual, including everything from art and advertisements to TV and movies.</p>-->
+        <p>
+            In a lot of ways, this is how we’ve been doing things all along, even if we haven’t been consciously
+            thinking about it in this specific way.
+        </p>
 
-    <!--        <p>-->
-    <!--            Data visualization is another form of visual art that grabs our interest and keeps our eyes on the message.-->
-    <!--        </p>-->
+        <p>
+            Atomic design provides a clear methodology for crafting design systems. Clients and team members are able to
+            better appreciate the concept of design systems by actually seeing the steps laid out in front of them.
+        </p>
 
-    <!--        <p>-->
-    <!--            When we see a chart, we quickly see trends and outliers. If we can see something, we internalize it quickly.-->
-    <!--            It’s storytelling with a purpose.-->
-    <!--        </p>-->
-    <!--    </slide-two-column>-->
+        <p>
+            Atomic design gives us the ability to traverse from abstract to concrete. Because of this, we can create
+            systems that promote consistency and scalability while simultaneously showing things in their final context.
+            And by assembling rather than deconstructing, we’re crafting a system right out of the gate instead of
+            cherry picking patterns after the fact.
+        </p>
+    </slide-two-column>
 
-    <!--    <slide-connected-islands heading="Benefits" [items]="dataVisualizationBenefits">-->
-    <!--        <div background></div>-->
-    <!--    </slide-connected-islands>-->
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
+    <slide-chapter-start [index]="5" [heading]="tableOfContents[5]" verticalPosition="top" horizontalPosition="left">
+        <div background></div>
+    </slide-chapter-start>
 
-    <!--    <slide-two-column heading="Big Data" position="right">-->
-    <!--        <div background></div>-->
+    <slide-two-column heading="Required Things" position="right">
+        <div background></div>
 
-    <!--        <p>-->
-    <!--            As the age of Big Data kicks into high-gear, visualization is an increasingly key tool to make sense of the-->
-    <!--            trillions of rows of data generated every day.-->
-    <!--        </p>-->
+        <ul>
+            <li>Start by breaking things down.</li>
+            <li>Remember that everything is a component.</li>
+            <li>Smaller pieces compose into larger components.</li>
+            <li>Larger components compose into layouts.</li>
+            <li>Layouts compose into pages.</li>
+        </ul>
+    </slide-two-column>
 
-    <!--        <p>-->
-    <!--            Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the-->
-    <!--            trends and outliers.-->
-    <!--        </p>-->
+    <slide-two-column heading="Tips" position="right">
+        <div background></div>
 
-    <!--        <p>A good visualization tells a story, removing the noise from data and highlighting the useful information.</p>-->
-    <!--    </slide-two-column>-->
+        <ul>
+            <li>Be vigilant with your component APIs.</li>
+            <li>Don't add things before there are specific use cases for them.</li>
+            <li>Name things well and agree on standard before hand.</li>
+            <li>When in doubt on future use cases, provide custom component renderers.</li>
+            <li>Setup linting first.</li>
+            <li>Test for server side render-ability early and often.</li>
+            <li>Add linting for a11y accessibility</li>
+        </ul>
+    </slide-two-column>
 
-    <!--    <slide-chapter-start [index]="1" [heading]="tableOfContents[1]" verticalPosition="top" horizontalPosition="right">-->
-    <!--        <div background></div>-->
-    <!--    </slide-chapter-start>-->
+    <slide-two-column heading="Benefits" position="right">
+        <div background></div>
 
-    <!--    <slide-two-column heading="D3.js" position="right">-->
-    <!--        <div background>-->
-    <!--            <icon-d3js class="icon"></icon-d3js>-->
-    <!--        </div>-->
+        <ul>
+            <li>With this setup you can achieve a faster development velocity.</li>
+            <li>Individuals can work on isolated parts of the system without fear of breaking other things.</li>
+            <li>You wil have a multi-platform UI library.</li>
+            <li>You can render static or server side apps for better UX and index-ability.</li>
+            <li>Choosing the static path gives you out of the box raw scale power with less devops complexity.</li>
+        </ul>
+    </slide-two-column>
 
-    <!--        <p>D3 (or D3.js) is a JavaScript library for visualizing data using web standards.</p>-->
-
-    <!--        <p>It helps you bring data to life using SVG, Canvas and HTML.</p>-->
-
-    <!--        <p>-->
-    <!--            It combines powerful visualization and interaction techniques with a data-driven approach to DOM-->
-    <!--            manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual-->
-    <!--            interface for your data.-->
-    <!--        </p>-->
-
-    <!--        <p>Works with anything</p>-->
-    <!--    </slide-two-column>-->
-
-    <!--    <slide-two-column heading="Chart.js" position="left">-->
-    <!--        <div background>-->
-    <!--            <icon-chartjs class="icon"></icon-chartjs>-->
-    <!--        </div>-->
-
-    <!--        <p>A very popular open-source library with more than 40k stars on GitHub.</p>-->
-
-    <!--        <p>It’s lightweight and lets you build a responsive chart using HTML5 Canvas elements.</p>-->
-
-    <!--        <p>-->
-    <!--            Chart.js offers you six different chart types by default, it supports responsiveness and is-->
-    <!--            beginner-friendly. It’s also my go-to library for very large datasets.-->
-    <!--        </p>-->
-
-    <!--        <p>Works with React and Vue.js</p>-->
-    <!--    </slide-two-column>-->
-
-    <!--    <slide-two-column heading="React-vis" position="right">-->
-    <!--        <div background>-->
-    <!--            <icon-uber class="icon"></icon-uber>-->
-    <!--        </div>-->
-
-    <!--        <p>-->
-    <!--            It’s a simple Javascript graph visualization library created by Uber, which allows you to create all the-->
-    <!--            usual types of charts such as bar charts, tree maps, line, area, and more.-->
-    <!--        </p>-->
-
-    <!--        <p>-->
-    <!--            ts API is quite simple and offers a lot of flexibility. It’s light and the animations are simple but fluid.-->
-    <!--        </p>-->
-
-    <!--        <p>It also allows you to write custom charts based on existing elements.</p>-->
-
-    <!--        <p>Works with React</p>-->
-    <!--    </slide-two-column>-->
-
-    <!--    <slide-two-column heading="Highcharts" position="left">-->
-    <!--        <div background>-->
-    <!--            <icon-highcharts class="icon"></icon-highcharts>-->
-    <!--        </div>-->
-
-    <!--        <p>-->
-    <!--            A JS library released in 2009 JS, based on SVG with fallbacks to VML and Canvas for old browsers. It offers-->
-    <!--            a whole ecosystem of different project templates.-->
-    <!--        </p>-->
-
-    <!--        <p>-->
-    <!--            Its learning curve is rather smooth and it’s been used by a number of major players, like Facebook or-->
-    <!--            Microsoft—there’ve even been claims that 72 out of the 100 of the world’s largest companies have used it at-->
-    <!--            some point.-->
-    <!--        </p>-->
-
-    <!--        <p>-->
-    <!--            Contrary to D3, it’s a paid solution and carries a $1500 price tag for an unlimited commercial use license.-->
-    <!--        </p>-->
-
-    <!--        <p>Works with anything</p>-->
-    <!--    </slide-two-column>-->
-
-    <!--    <slide-two-column heading="Ogma" position="right">-->
-    <!--        <div background>-->
-    <!--            <icon-ogma class="icon"></icon-ogma>-->
-    <!--        </div>-->
-
-    <!--        <p>-->
-    <!--            Ogma is Linkurious's JavaScript graph visualization library. It provides a powerful graphics engine based on-->
-    <!--            WebGLand supports older machines with HTML5 Canvas.-->
-    <!--        </p>-->
-
-    <!--        <p>No complex setup, license files, dependencies or learning curve.</p>-->
-
-    <!--        <p>Powerful layout algorithms: automatic organization of tens of thousands of nodes and edges.</p>-->
-
-    <!--        <p>-->
-    <!--            Automatic clustering based on business entities and properties. No need for lots of code, get things done in-->
-    <!--            no time.-->
-    <!--        </p>-->
-
-    <!--        <p>Data-driven styling out of the box. Simple rules define how style elements depend on data properties.</p>-->
-
-    <!--        <p>-->
-    <!--            Business-oriented and data discovery with ease. The API offers all you need to create the business-->
-    <!--            visualizations you need (anomaly detection, clusters, rings…).-->
-    <!--        </p>-->
-
-    <!--        <p>Works with anything</p>-->
-    <!--    </slide-two-column>-->
-
+    <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
     <slide-thanks>
         <div background></div>
     </slide-thanks>
