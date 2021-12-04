@@ -19,18 +19,43 @@
             background-image: url('~src/app/illustrations/storybook/storybook.component.svg');
         }
     }
-
-    //slide-table-of-contents {
-    //    [background] {
-    //        background-image: url('~src/app/illustrations/watermark/watermark.component.svg');
-    //    }
-    //}
-    //
-    //slide-chapter-start:nth-of-type(1) {
-    //    [background] {
-    //        background-image: url('~src/app/illustrations/network3/network3.component.svg');
-    //    }
-    //}
+	
+    slide-chapter-start:nth-of-type(1) {
+        [background] {
+            background-image: url('~src/assets/images/backgrounds/Background 01.jpg');
+        }
+    }
+	
+	slide-chapter-start:nth-of-type(2) {
+		[background] {
+			background-image: url('~src/assets/images/backgrounds/Background 02.jpg');
+		}
+	}
+	
+	slide-chapter-start:nth-of-type(3) {
+		[background] {
+			background-image: url('~src/assets/images/backgrounds/Background 03.jpg');
+		}
+	}
+	
+	slide-chapter-start:nth-of-type(4) {
+		[background] {
+			background-image: url('~src/assets/images/backgrounds/Background 04.jpg');
+		}
+	}
+	
+	slide-chapter-start:nth-of-type(5) {
+		[background] {
+			background-image: url('~src/assets/images/backgrounds/Background 05.jpg');
+		}
+	}
+	
+	slide-chapter-start:nth-of-type(6) {
+		[background] {
+			background-image: url('~src/assets/images/backgrounds/Background 06.jpg');
+		}
+	}
+	
     //
     //slide-two-column:nth-of-type(1) {
     //    [background] {

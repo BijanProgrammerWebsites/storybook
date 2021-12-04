@@ -13,7 +13,12 @@
     </slide-table-of-contents>
 
     <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
-    <slide-chapter-start [index]="0" [heading]="tableOfContents[0]" verticalPosition="top" horizontalPosition="left">
+    <slide-chapter-start
+        [index]="0"
+        [heading]="tableOfContents[0]"
+        verticalPosition="center"
+        horizontalPosition="center"
+    >
         <div background></div>
     </slide-chapter-start>
 
@@ -37,7 +42,7 @@
     </slide-two-column>
 
     <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
-    <slide-chapter-start [index]="1" [heading]="tableOfContents[1]" verticalPosition="top" horizontalPosition="left">
+    <slide-chapter-start [index]="1" [heading]="tableOfContents[1]" verticalPosition="bottom" horizontalPosition="left">
         <div background></div>
     </slide-chapter-start>
 
@@ -90,7 +95,12 @@
     </slide-two-column>
 
     <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
-    <slide-chapter-start [index]="2" [heading]="tableOfContents[2]" verticalPosition="top" horizontalPosition="left">
+    <slide-chapter-start
+        [index]="2"
+        [heading]="tableOfContents[2]"
+        verticalPosition="center"
+        horizontalPosition="center"
+    >
         <div background></div>
     </slide-chapter-start>
 
@@ -128,7 +138,12 @@
     </slide-two-column>
 
     <!-- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -->
-    <slide-chapter-start [index]="3" [heading]="tableOfContents[3]" verticalPosition="top" horizontalPosition="left">
+    <slide-chapter-start
+        [index]="3"
+        [heading]="tableOfContents[3]"
+        verticalPosition="center"
+        horizontalPosition="center"
+    >
         <div background></div>
     </slide-chapter-start>
 
@@ -267,7 +282,7 @@
     </slide-thanks>
 </div>
 
-<div class="slide-number-container" [ngClass]="{reverse: [1].includes(slideIndex)}">
+<div class="slide-number-container">
     <div class="slide-number">{{ slideIndex }}</div>
     <div class="separator">of</div>
     <div class="slides-count">{{ slidesCount }}</div>
