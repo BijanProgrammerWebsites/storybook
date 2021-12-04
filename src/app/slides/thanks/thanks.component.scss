@@ -1,0 +1,15 @@
+.slide {
+    display: grid;
+    place-items: stretch;
+
+    padding-inline: var(--full-width-padding-inline);
+
+    .content {
+        display: grid;
+        place-items: center;
+
+        h1 {
+            color: var(--color--storybook-pink);
+        }
+    }
+}

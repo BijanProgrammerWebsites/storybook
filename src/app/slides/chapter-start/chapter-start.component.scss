@@ -1,0 +1,53 @@
+.slide {
+    display: grid;
+    place-items: stretch;
+
+    padding-inline: var(--full-width-padding-inline);
+
+    .content {
+        display: grid;
+
+        &.vertical {
+            &-top {
+                align-items: flex-start;
+            }
+
+            &-center {
+                align-items: center;
+            }
+
+            &-bottom {
+                align-items: flex-end;
+            }
+        }
+
+        &.horizontal {
+            &-left {
+                justify-items: flex-start;
+            }
+
+            &-center {
+                justify-items: center;
+            }
+
+            &-right {
+                justify-items: flex-end;
+            }
+        }
+
+        header {
+            display: flex;
+            gap: 1rem;
+
+            font-size: 3.6rem;
+
+            .index {
+                font-size: 1em;
+            }
+
+            h1 {
+                font-size: 1em;
+            }
+        }
+    }
+}

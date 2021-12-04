@@ -1,0 +1,25 @@
+<div class="slide">
+    <div class="background-container">
+        <ng-content select="[background]"></ng-content>
+    </div>
+
+    <div class="content">
+        <h1>{{ heading }}</h1>
+
+        <div class="label">professor:</div>
+        <div class="value">{{ professor }}</div>
+
+        <div class="label">creators:</div>
+        <ul class="value">
+            <li *ngFor="let creator of creators">{{ creator }}</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="kharazmi-logo">
+            <icon-kharazmi></icon-kharazmi>
+        </div>
+
+        <p *ngFor="let part of footer">{{ part }}</p>
+    </div>
+</div>

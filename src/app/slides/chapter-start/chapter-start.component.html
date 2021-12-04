@@ -1,0 +1,12 @@
+<div class="slide">
+    <div class="background-container">
+        <ng-content select="[background]"></ng-content>
+    </div>
+
+    <div class="content" [ngClass]="['vertical-' + verticalPosition, 'horizontal-' + horizontalPosition]">
+        <header>
+            <div class="index">{{ index + 1 | leadWithZero }}.</div>
+            <h1>{{ heading }}</h1>
+        </header>
+    </div>
+</div>

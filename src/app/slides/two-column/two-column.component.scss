@@ -1,0 +1,47 @@
+.slide {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 8rem;
+
+    padding-inline: var(--full-width-padding-inline);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        &.horizontal {
+            &-left {
+                grid-column: 1;
+            }
+
+            &-center {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+
+            &-right {
+                grid-column: 2;
+            }
+        }
+
+        &:not(.horizontal-center) {
+            header {
+                padding: 0;
+
+                h1 {
+                    text-align: left;
+                }
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            padding: 0;
+        }
+    }
+}

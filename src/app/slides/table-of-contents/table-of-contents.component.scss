@@ -1,0 +1,55 @@
+.slide {
+    display: grid;
+    place-items: stretch;
+
+    padding-inline: var(--full-width-padding-inline);
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        padding: 4rem;
+
+        main {
+            ol {
+                flex: 1;
+
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+                gap: 4rem;
+
+                li {
+                    flex: 1 0 auto;
+
+                    position: relative;
+
+                    min-width: 30rem;
+
+                    padding-block: 4rem;
+
+                    font-size: 2.4rem;
+
+                    .index {
+                        color: var(--color--watermark);
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+
+                        font-size: 2.4em;
+                        font-weight: 900;
+
+                        transform: translate(-0.5em, -0.5em);
+                    }
+
+                    .item {
+                        font-size: 1.2em;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

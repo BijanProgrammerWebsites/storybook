@@ -1,0 +1,199 @@
+<div #slideshow class="slideshow" [style.--slide-index]="slideIndex">
+    <slide-cover
+        heading="Auto-Generating Documents Using Storybook"
+        professor="Dr. Ashrafi"
+        [creators]="['Parsa Arvaneh', 'Bijan Eisapour']"
+        [footer]="['Kharazmi University', '2021-12-04']"
+    >
+        <div background></div>
+    </slide-cover>
+
+    <!--    <slide-table-of-contents [items]="tableOfContents">-->
+    <!--        <div background></div>-->
+    <!--    </slide-table-of-contents>-->
+
+    <!--    <slide-chapter-start [index]="0" [heading]="tableOfContents[0]" verticalPosition="top" horizontalPosition="left">-->
+    <!--        <div background></div>-->
+    <!--    </slide-chapter-start>-->
+
+    <!--    <slide-two-column heading="Definition" position="right">-->
+    <!--        <div background></div>-->
+
+    <!--        <p>Data visualization is the graphical representation of information and data.</p>-->
+
+    <!--        <p>-->
+    <!--            By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way-->
+    <!--            to see and understand trends, outliers, and patterns in data.-->
+    <!--        </p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-two-column heading="Importance & Usage" position="right">-->
+    <!--        <div background></div>-->
+
+    <!--        <p>Data visualization is important for almost every career.</p>-->
+
+    <!--        <p>-->
+    <!--            It can be used by teachers to display student test results, by computer scientists exploring advancements in-->
+    <!--            artificial intelligence (AI) or by executives looking to share information with stakeholders.-->
+    <!--        </p>-->
+
+    <!--        <p>It also plays an important role in big data projects.</p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-two-column heading="Visual Clues" position="left">-->
+    <!--        <div background></div>-->
+
+    <!--        <p>Our eyes are drawn to colors and patterns. We can quickly identify red from blue, square from circle.</p>-->
+
+    <!--        <p>Our culture is visual, including everything from art and advertisements to TV and movies.</p>-->
+
+    <!--        <p>-->
+    <!--            Data visualization is another form of visual art that grabs our interest and keeps our eyes on the message.-->
+    <!--        </p>-->
+
+    <!--        <p>-->
+    <!--            When we see a chart, we quickly see trends and outliers. If we can see something, we internalize it quickly.-->
+    <!--            It’s storytelling with a purpose.-->
+    <!--        </p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-connected-islands heading="Benefits" [items]="dataVisualizationBenefits">-->
+    <!--        <div background></div>-->
+    <!--    </slide-connected-islands>-->
+
+    <!--    <slide-two-column heading="Big Data" position="right">-->
+    <!--        <div background></div>-->
+
+    <!--        <p>-->
+    <!--            As the age of Big Data kicks into high-gear, visualization is an increasingly key tool to make sense of the-->
+    <!--            trillions of rows of data generated every day.-->
+    <!--        </p>-->
+
+    <!--        <p>-->
+    <!--            Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the-->
+    <!--            trends and outliers.-->
+    <!--        </p>-->
+
+    <!--        <p>A good visualization tells a story, removing the noise from data and highlighting the useful information.</p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-chapter-start [index]="1" [heading]="tableOfContents[1]" verticalPosition="top" horizontalPosition="right">-->
+    <!--        <div background></div>-->
+    <!--    </slide-chapter-start>-->
+
+    <!--    <slide-two-column heading="D3.js" position="right">-->
+    <!--        <div background>-->
+    <!--            <icon-d3js class="icon"></icon-d3js>-->
+    <!--        </div>-->
+
+    <!--        <p>D3 (or D3.js) is a JavaScript library for visualizing data using web standards.</p>-->
+
+    <!--        <p>It helps you bring data to life using SVG, Canvas and HTML.</p>-->
+
+    <!--        <p>-->
+    <!--            It combines powerful visualization and interaction techniques with a data-driven approach to DOM-->
+    <!--            manipulation, giving you the full capabilities of modern browsers and the freedom to design the right visual-->
+    <!--            interface for your data.-->
+    <!--        </p>-->
+
+    <!--        <p>Works with anything</p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-two-column heading="Chart.js" position="left">-->
+    <!--        <div background>-->
+    <!--            <icon-chartjs class="icon"></icon-chartjs>-->
+    <!--        </div>-->
+
+    <!--        <p>A very popular open-source library with more than 40k stars on GitHub.</p>-->
+
+    <!--        <p>It’s lightweight and lets you build a responsive chart using HTML5 Canvas elements.</p>-->
+
+    <!--        <p>-->
+    <!--            Chart.js offers you six different chart types by default, it supports responsiveness and is-->
+    <!--            beginner-friendly. It’s also my go-to library for very large datasets.-->
+    <!--        </p>-->
+
+    <!--        <p>Works with React and Vue.js</p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-two-column heading="React-vis" position="right">-->
+    <!--        <div background>-->
+    <!--            <icon-uber class="icon"></icon-uber>-->
+    <!--        </div>-->
+
+    <!--        <p>-->
+    <!--            It’s a simple Javascript graph visualization library created by Uber, which allows you to create all the-->
+    <!--            usual types of charts such as bar charts, tree maps, line, area, and more.-->
+    <!--        </p>-->
+
+    <!--        <p>-->
+    <!--            ts API is quite simple and offers a lot of flexibility. It’s light and the animations are simple but fluid.-->
+    <!--        </p>-->
+
+    <!--        <p>It also allows you to write custom charts based on existing elements.</p>-->
+
+    <!--        <p>Works with React</p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-two-column heading="Highcharts" position="left">-->
+    <!--        <div background>-->
+    <!--            <icon-highcharts class="icon"></icon-highcharts>-->
+    <!--        </div>-->
+
+    <!--        <p>-->
+    <!--            A JS library released in 2009 JS, based on SVG with fallbacks to VML and Canvas for old browsers. It offers-->
+    <!--            a whole ecosystem of different project templates.-->
+    <!--        </p>-->
+
+    <!--        <p>-->
+    <!--            Its learning curve is rather smooth and it’s been used by a number of major players, like Facebook or-->
+    <!--            Microsoft—there’ve even been claims that 72 out of the 100 of the world’s largest companies have used it at-->
+    <!--            some point.-->
+    <!--        </p>-->
+
+    <!--        <p>-->
+    <!--            Contrary to D3, it’s a paid solution and carries a $1500 price tag for an unlimited commercial use license.-->
+    <!--        </p>-->
+
+    <!--        <p>Works with anything</p>-->
+    <!--    </slide-two-column>-->
+
+    <!--    <slide-two-column heading="Ogma" position="right">-->
+    <!--        <div background>-->
+    <!--            <icon-ogma class="icon"></icon-ogma>-->
+    <!--        </div>-->
+
+    <!--        <p>-->
+    <!--            Ogma is Linkurious's JavaScript graph visualization library. It provides a powerful graphics engine based on-->
+    <!--            WebGLand supports older machines with HTML5 Canvas.-->
+    <!--        </p>-->
+
+    <!--        <p>No complex setup, license files, dependencies or learning curve.</p>-->
+
+    <!--        <p>Powerful layout algorithms: automatic organization of tens of thousands of nodes and edges.</p>-->
+
+    <!--        <p>-->
+    <!--            Automatic clustering based on business entities and properties. No need for lots of code, get things done in-->
+    <!--            no time.-->
+    <!--        </p>-->
+
+    <!--        <p>Data-driven styling out of the box. Simple rules define how style elements depend on data properties.</p>-->
+
+    <!--        <p>-->
+    <!--            Business-oriented and data discovery with ease. The API offers all you need to create the business-->
+    <!--            visualizations you need (anomaly detection, clusters, rings…).-->
+    <!--        </p>-->
+
+    <!--        <p>Works with anything</p>-->
+    <!--    </slide-two-column>-->
+
+    <slide-thanks>
+        <div background></div>
+    </slide-thanks>
+</div>
+
+<div class="slide-number-container" [ngClass]="{reverse: [1].includes(slideIndex)}">
+    <div class="slide-number">{{ slideIndex }}</div>
+    <div class="separator">of</div>
+    <div class="slides-count">{{ slidesCount }}</div>
+</div>

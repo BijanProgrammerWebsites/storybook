@@ -1,0 +1,20 @@
+<div class="slide">
+    <div class="background-container">
+        <ng-content select="[background]"></ng-content>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Table of Contents</h1>
+        </header>
+
+        <main>
+            <ol>
+                <li *ngFor="let item of items; let index = index">
+                    <div class="index">{{ index + 1 | leadWithZero }}</div>
+                    <div class="item">{{ item }}</div>
+                </li>
+            </ol>
+        </main>
+    </div>
+</div>

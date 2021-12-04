@@ -1,0 +1,15 @@
+<div class="slide">
+    <div class="background-container">
+        <ng-content select="[background]"></ng-content>
+    </div>
+
+    <div class="content" [ngClass]="['horizontal-' + position]">
+        <header>
+            <h1>{{ heading }}</h1>
+        </header>
+
+        <main>
+            <ng-content select="p"></ng-content>
+        </main>
+    </div>
+</div>
