@@ -1,27 +1,12 @@
-name: Deployment Workflow
+name: Deploy
 on:
-    push:
-        branches: [master]
+  push:
+    branches: [master]
 
 jobs:
-    deply_job:
-        name: Deploy
-        runs-on: ubuntu-latest
-        steps:
-            - name: Establish a Connection to Server and Update Website
-              uses: appleboy/ssh-action@master
-              with:
-                  host: 130.185.76.173
-                  username: root
-                  key: ${{secrets.SSH_KEY}}
-                  port: 22
-                  script: |
-                      cd /repos/storybook
-                      git fetch
-                      git checkout master
-                      git reset --hard HEAD
-                      git pull origin master
-                      npm i
-                      ng build --base-href=/storybook/
-                      rm -rf /var/slides/bijanprogrammer.com/html/storybook
-                      cp -a dist/storybook/. /var/slides/bijanprogrammer.com/html/storybook
+  deploy:
+    uses: BijanProgrammerWebsites/hub/.github/workflows/deploy-angular.yml@master
+    with:
+      host: slides.bijanprogrammer.com
+      base-href: /storybook/
+      project-name: storybook
